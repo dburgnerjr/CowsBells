@@ -5,4 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="cowsBells">CowsBells Free Version</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="superHard">Super Hard</string>
+    <string name="howToPlay">How To Play</string>
 </resources>
