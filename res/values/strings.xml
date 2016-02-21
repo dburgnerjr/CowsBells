@@ -11,4 +11,13 @@
     <string name="hard">Hard</string>
     <string name="superHard">Super Hard</string>
     <string name="howToPlay">How To Play</string>
+    
+    <string name="guess">Guess:  </string>
+    <string name="submit">Submit</string>
+    <string name="newGame">New Game</string>
+    
+    <string name="numGuess">Number</string>
+    <string name="guessSubmitted">Guess</string>
+    <string name="cows">Cows</string>
+    <string name="bells">Bells</string>
 </resources>

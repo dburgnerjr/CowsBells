@@ -1,6 +1,7 @@
 package com.danielburgnerjr.cowsbells;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,8 @@ public class MainActivity extends Activity {
 		final Button btnEasy = (Button) findViewById(R.id.btnEasy);
 		btnEasy.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
+			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
+			    startActivity(intA);
 				Toast.makeText(getApplicationContext(), "Easy", Toast.LENGTH_SHORT).show();
 			}
 		});
@@ -26,6 +29,8 @@ public class MainActivity extends Activity {
 		final Button btnMedium = (Button) findViewById(R.id.btnMedium);
 		btnMedium.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
+			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
+			    startActivity(intA);
 				Toast.makeText(getApplicationContext(), "Medium", Toast.LENGTH_SHORT).show();
 			}
 		});
@@ -33,6 +38,8 @@ public class MainActivity extends Activity {
 		final Button btnHard = (Button) findViewById(R.id.btnHard);
 		btnHard.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
+			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
+			    startActivity(intA);
 				Toast.makeText(getApplicationContext(), "Hard", Toast.LENGTH_SHORT).show();
 			}
 		});
@@ -40,6 +47,8 @@ public class MainActivity extends Activity {
 		final Button btnSuperHard = (Button) findViewById(R.id.btnSuperHard);
 		btnSuperHard.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
+			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
+			    startActivity(intA);
 				Toast.makeText(getApplicationContext(), "Super Hard", Toast.LENGTH_SHORT).show();
 			}
 		});

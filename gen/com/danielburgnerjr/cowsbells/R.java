@@ -2003,7 +2003,11 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f020046;
     }
     public static final class id {
-        public static final int action0=0x7f090056;
+        public static final int FirstText=0x7f09005c;
+        public static final int FourthText=0x7f09005f;
+        public static final int SecondText=0x7f09005d;
+        public static final int ThirdText=0x7f09005e;
+        public static final int action0=0x7f090060;
         public static final int action_bar=0x7f090041;
         public static final int action_bar_activity_content=0x7f090003;
         public static final int action_bar_container=0x7f090040;
@@ -2012,13 +2016,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f090022;
         public static final int action_bar_title=0x7f090021;
         public static final int action_context_bar=0x7f090042;
-        public static final int action_divider=0x7f09005a;
+        public static final int action_divider=0x7f090064;
         public static final int action_menu_divider=0x7f090005;
         public static final int action_menu_presenter=0x7f090006;
         public static final int action_mode_bar=0x7f09003e;
         public static final int action_mode_bar_stub=0x7f09003d;
         public static final int action_mode_close_button=0x7f090023;
-        public static final int action_settings=0x7f090063;
+        public static final int action_settings=0x7f09006d;
         public static final int activity_chooser_view_content=0x7f090024;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
@@ -2027,11 +2031,13 @@ containing a value of this type.
         public static final int btnHard=0x7f090053;
         public static final int btnHowToPlay=0x7f090055;
         public static final int btnMedium=0x7f090052;
+        public static final int btnQuit=0x7f09005a;
+        public static final int btnSubmit=0x7f090059;
         public static final int btnSuperHard=0x7f090054;
         public static final int buttonPanel=0x7f09002b;
-        public static final int cancel_action=0x7f090057;
+        public static final int cancel_action=0x7f090061;
         public static final int checkbox=0x7f090039;
-        public static final int chronometer=0x7f09005d;
+        public static final int chronometer=0x7f090067;
         public static final int collapseActionView=0x7f09001a;
         public static final int contentPanel=0x7f090031;
         public static final int custom=0x7f090037;
@@ -2041,7 +2047,7 @@ containing a value of this type.
         public static final int disableHome=0x7f09000d;
         public static final int edit_query=0x7f090043;
         public static final int end=0x7f09001f;
-        public static final int end_padder=0x7f090062;
+        public static final int end_padder=0x7f09006c;
         public static final int expand_activities_button=0x7f090025;
         public static final int expanded_menu=0x7f090038;
         public static final int home=0x7f090000;
@@ -2049,12 +2055,14 @@ containing a value of this type.
         public static final int icon=0x7f090029;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090026;
-        public static final int info=0x7f090061;
-        public static final int line1=0x7f09005b;
-        public static final int line3=0x7f09005f;
+        public static final int info=0x7f09006b;
+        public static final int line1=0x7f090065;
+        public static final int line3=0x7f090069;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090028;
-        public static final int media_actions=0x7f090059;
+        public static final int llGuess=0x7f090056;
+        public static final int llSubmitQuit=0x7f090058;
+        public static final int media_actions=0x7f090063;
         public static final int middle=0x7f090020;
         public static final int multiply=0x7f090014;
         public static final int never=0x7f09001c;
@@ -2064,6 +2072,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09003b;
+        public static final int relativeLayout1=0x7f09005b;
         public static final int screen=0x7f090015;
         public static final int scrollIndicatorDown=0x7f090035;
         public static final int scrollIndicatorUp=0x7f090032;
@@ -2088,17 +2097,18 @@ containing a value of this type.
         public static final int src_atop=0x7f090016;
         public static final int src_in=0x7f090017;
         public static final int src_over=0x7f090018;
-        public static final int status_bar_latest_event_content=0x7f090058;
+        public static final int status_bar_latest_event_content=0x7f090062;
         public static final int submit_area=0x7f09004c;
         public static final int tabMode=0x7f09000c;
-        public static final int text=0x7f090060;
-        public static final int text2=0x7f09005e;
+        public static final int text=0x7f09006a;
+        public static final int text2=0x7f090068;
         public static final int textAppName=0x7f090050;
         public static final int textSpacerNoButtons=0x7f090034;
-        public static final int time=0x7f09005c;
+        public static final int time=0x7f090066;
         public static final int title=0x7f09002a;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
+        public static final int txtGuess=0x7f090057;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
         public static final int withText=0x7f09001d;
@@ -2167,18 +2177,20 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030017;
         public static final int abc_select_dialog_material=0x7f030018;
         public static final int activity_main=0x7f030019;
-        public static final int notification_media_action=0x7f03001a;
-        public static final int notification_media_cancel_action=0x7f03001b;
-        public static final int notification_template_big_media=0x7f03001c;
-        public static final int notification_template_big_media_narrow=0x7f03001d;
-        public static final int notification_template_lines=0x7f03001e;
-        public static final int notification_template_media=0x7f03001f;
-        public static final int notification_template_part_chronometer=0x7f030020;
-        public static final int notification_template_part_time=0x7f030021;
-        public static final int select_dialog_item_material=0x7f030022;
-        public static final int select_dialog_multichoice_material=0x7f030023;
-        public static final int select_dialog_singlechoice_material=0x7f030024;
-        public static final int support_simple_spinner_dropdown_item=0x7f030025;
+        public static final int game_activity=0x7f03001a;
+        public static final int notification_media_action=0x7f03001b;
+        public static final int notification_media_cancel_action=0x7f03001c;
+        public static final int notification_template_big_media=0x7f03001d;
+        public static final int notification_template_big_media_narrow=0x7f03001e;
+        public static final int notification_template_lines=0x7f03001f;
+        public static final int notification_template_media=0x7f030020;
+        public static final int notification_template_part_chronometer=0x7f030021;
+        public static final int notification_template_part_time=0x7f030022;
+        public static final int row_layout=0x7f030023;
+        public static final int select_dialog_item_material=0x7f030024;
+        public static final int select_dialog_multichoice_material=0x7f030025;
+        public static final int select_dialog_singlechoice_material=0x7f030026;
+        public static final int support_simple_spinner_dropdown_item=0x7f030027;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -2251,12 +2263,18 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int action_settings=0x7f0a0016;
         public static final int app_name=0x7f0a0014;
+        public static final int bells=0x7f0a0023;
+        public static final int cows=0x7f0a0022;
         public static final int cowsBells=0x7f0a0017;
         public static final int easy=0x7f0a0018;
+        public static final int guess=0x7f0a001d;
+        public static final int guessSubmitted=0x7f0a0021;
         public static final int hard=0x7f0a001a;
         public static final int hello_world=0x7f0a0015;
         public static final int howToPlay=0x7f0a001c;
         public static final int medium=0x7f0a0019;
+        public static final int newGame=0x7f0a001f;
+        public static final int numGuess=0x7f0a0020;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
          values/config.xml) and must be truncated. May need to be localized
@@ -2264,6 +2282,7 @@ containing a value of this type.
          [CHAR LIMIT=4] 
          */
         public static final int status_bar_notification_info_overflow=0x7f0a0011;
+        public static final int submit=0x7f0a001e;
         public static final int superHard=0x7f0a001b;
     }
     public static final class style {
@@ -2276,27 +2295,27 @@ containing a value of this type.
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
 
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
- API 11 theme customizations can go here. 
 
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
- API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
          */
         public static final int AppBaseTheme=0x7f0b0133;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0b0134;
+        public static final int AppTheme=0x7f0b0136;
         public static final int Base_AlertDialog_AppCompat=0x7f0b00cc;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f0b00cd;
         public static final int Base_Animation_AppCompat_Dialog=0x7f0b00c8;
@@ -2484,6 +2503,7 @@ containing a value of this type.
     
          */
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b00ae;
+        public static final int CowsBellsOpenScreenTheme=0x7f0b0135;
         public static final int Platform_AppCompat=0x7f0b0109;
         public static final int Platform_AppCompat_Light=0x7f0b010a;
         /**  Overlay themes 
@@ -2706,6 +2726,7 @@ containing a value of this type.
          */
         public static final int Widget_AppCompat_Toolbar=0x7f0b0045;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0046;
+        public static final int WindowTitleBackground=0x7f0b0134;
     }
     public static final class styleable {
         /**  ============================================ 
