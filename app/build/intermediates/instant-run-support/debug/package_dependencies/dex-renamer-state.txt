@@ -1,0 +1,4 @@
+#Sun Mar 04 13:41:16 CST 2018
+base.0=/Users/dburgnerjr/CowsBells/app/build/intermediates/transforms/dexMerger/debug/11
+path.0=classes.dex
+renamed.0=classes.dex
