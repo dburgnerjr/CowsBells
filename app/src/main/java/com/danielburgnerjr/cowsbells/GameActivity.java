@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import java.util.Collections;
+import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -25,19 +27,19 @@ public class GameActivity extends Activity {
 		switch (nGameCode) {
             case 4:
                 strAnswer = setAnswer(nGameCode);
-                Toast.makeText(getApplicationContext(), "Easy" + strAnswer, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Easy " + strAnswer, Toast.LENGTH_SHORT).show();
                 break;
             case 5:
                 strAnswer = setAnswer(nGameCode);
-                Toast.makeText(getApplicationContext(), "Medium" + strAnswer, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Medium " + strAnswer, Toast.LENGTH_SHORT).show();
                 break;
             case 6:
                 strAnswer = setAnswer(nGameCode);
-                Toast.makeText(getApplicationContext(), "Hard" + strAnswer, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Hard " + strAnswer, Toast.LENGTH_SHORT).show();
                 break;
             case 7:
                 strAnswer = setAnswer(nGameCode);
-                Toast.makeText(getApplicationContext(), "Super Hard" + strAnswer, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Super Hard " + strAnswer, Toast.LENGTH_SHORT).show();
                 break;
         }
 		
@@ -47,28 +49,14 @@ public class GameActivity extends Activity {
 	public String setAnswer(int nGC) {
 	    String strA = "";
 
-        Random rand = new Random();
-        int nDigit;
-        boolean bMatch = false;
+	    ArrayList alNumbers = new ArrayList();
+	    for (int nI = 0; nI < 10; nI++) {
+	        alNumbers.add(nI);
+        }
 
-	    for (int nI = 0; nI < nGC; nI++) {
-	         nDigit = rand.nextInt(10);
-/*
-	         if (nI > 0) {
-                 for (int nJ = 1; nJ <= nI; nI++) {
-                     if (Integer.parseInt(strA.substring(nJ - 1, nJ)) == nDigit) {
-                         bMatch = true;
-                     }
-                 }
-             }
-             if (bMatch == false) {
-*/
-                 strA += nDigit;
-/*
-             } else {
-	             nI -= 1;
-             }
-*/
+        Collections.shuffle(alNumbers);
+	    for (int nJ = 0; nJ < nGC; nJ++) {
+	        strA += alNumbers.get(nJ);
         }
         return strA;
     }
