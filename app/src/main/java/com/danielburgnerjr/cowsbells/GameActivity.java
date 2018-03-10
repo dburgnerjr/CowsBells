@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import java.util.Collections;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class GameActivity extends Activity {
 	
@@ -56,21 +57,41 @@ public class GameActivity extends Activity {
 	}
 
 	public void compareAnswer(String strGuess) {
-	    String[] strGuessParts = strGuess.split("");
-	    String[] strAnswerParts = strAnswer.split("");
+	    HashMap<Character, Integer> hmMap = new HashMap<Character, Integer>();
+
 	    int nCows = 0;      // numbers guessed right
 	    int nBells = 0;     // numbers in exact location
 
-	    for (int nI = 0; nI < nGameCode; nI++) {
-            for (int nJ = 0; nJ < nGameCode; nJ++) {
-                if (strGuessParts[nI].equals(strAnswerParts[nJ])) {
-                    nCows++;
-                    if (nI == nJ) {
-                        nBells++;
-                    }
-                }
-            }
+	    // bells check
+		for (int nI = 0; nI < nGameCode; nI++) {
+			if (strGuess.charAt(nI) == strAnswer.charAt(nI)) {
+				nBells++;
+			} else {
+				if (hmMap.containsKey(strAnswer.charAt(nI))) {
+					int nFreq = hmMap.get(strAnswer.charAt(nI));
+					nFreq++;
+					hmMap.put(strAnswer.charAt(nI), nFreq);
+				} else {
+					hmMap.put(strAnswer.charAt(nI), 1);
+				}
+			}
         }
+
+        // cows check
+		for (int nI = 0; nI < nGameCode; nI++) {
+			if (strGuess.charAt(nI) != strAnswer.charAt(nI)) {
+				if (hmMap.containsKey(strGuess.charAt(nI))) {
+					nCows++;
+					if (hmMap.get(strGuess.charAt(nI)) == 1) {
+						hmMap.remove(strGuess.charAt(nI));
+					} else {
+						int nFreq = hmMap.get(strGuess.charAt(nI));
+						nFreq--;
+						hmMap.put(strGuess.charAt(nI), nFreq);
+					}
+				}
+			}
+		}
         Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells, Toast.LENGTH_SHORT).show();
     }
 }
