@@ -73,7 +73,9 @@ public class MainActivity extends Activity {
 		final Button btnHowToPlay = (Button) findViewById(R.id.btnHowToPlay);
 		btnHowToPlay.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
+				Intent intA = new Intent(MainActivity.this, HowToPlayActivity.class);
+				startActivity(intA);
+				//Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
 			}
 		});
 

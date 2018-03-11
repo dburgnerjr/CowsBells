@@ -11,13 +11,17 @@
     <string name="hard">Hard</string>
     <string name="superHard">Super Hard</string>
     <string name="howToPlay">How To Play</string>
-    
+
     <string name="guess">Guess:  </string>
     <string name="submit">Submit</string>
     <string name="newGame">New Game</string>
-    
+
     <string name="numGuess">Number</string>
     <string name="guessSubmitted">Guess</string>
     <string name="cows">Cows</string>
     <string name="bells">Bells</string>
+    <string name="cowsBellsRules">The object of this game is to guess the number in as few tries as possible.  Each number is used once.
+    The Easy level is where you guess a four digit number.  Medium level is for a five digit number.  Hard level is for a six digit number.
+    Super Hard is where you guess a seven digit number.  When a digit is among the digits in the number, it is scored as a "Cow."  When
+    the digit is in the exact location, it is scored as a "Bell."</string>
 </resources>
