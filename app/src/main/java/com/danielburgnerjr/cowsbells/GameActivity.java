@@ -15,6 +15,7 @@ public class GameActivity extends Activity {
 	private EditText etGuess;			// guess
 	private String strAnswer;
 	private int nGameCode;
+	private int nGuess;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class GameActivity extends Activity {
 
 		etGuess  = (EditText)findViewById(R.id.txtGuess);
         Toast.makeText(getApplicationContext(), strAnswer, Toast.LENGTH_SHORT).show();
+        nGuess = 0;
 	}
 
 	public String setAnswer(int nGC) {
@@ -92,6 +94,14 @@ public class GameActivity extends Activity {
 				}
 			}
 		}
-        Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells, Toast.LENGTH_SHORT).show();
+		nGuess++;
+        Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells + " Guess: " + nGuess, Toast.LENGTH_SHORT).show();
+        if (nBells == nGameCode) {
+            youWin();
+        }
+    }
+
+    public void youWin() {
+        Toast.makeText(getApplicationContext(), "You Win!", Toast.LENGTH_SHORT).show();
     }
 }
