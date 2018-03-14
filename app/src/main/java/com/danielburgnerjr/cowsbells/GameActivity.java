@@ -26,7 +26,6 @@ public class GameActivity extends Activity {
 		strAnswer = setAnswer(nGameCode);
 
 		etGuess  = (EditText)findViewById(R.id.txtGuess);
-        Toast.makeText(getApplicationContext(), strAnswer, Toast.LENGTH_SHORT).show();
         nGuess = 0;
 	}
 
@@ -55,7 +54,7 @@ public class GameActivity extends Activity {
 	public void newGame(View view) {
 		String strNewGame = "New Game";
         strAnswer = setAnswer(nGameCode);
-		Toast.makeText(getApplicationContext(), strNewGame + " " + strAnswer, Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), strNewGame, Toast.LENGTH_SHORT).show();
 	}
 
 	public void compareAnswer(String strGuess) {
@@ -102,6 +101,6 @@ public class GameActivity extends Activity {
     }
 
     public void youWin() {
-        Toast.makeText(getApplicationContext(), "You Win!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "You Win in " + nGuess + " tries!", Toast.LENGTH_SHORT).show();
     }
 }
