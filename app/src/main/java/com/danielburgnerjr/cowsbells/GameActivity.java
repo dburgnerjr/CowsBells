@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.Collections;
 import java.util.ArrayList;
@@ -59,6 +61,13 @@ public class GameActivity extends Activity {
 
 	public void compareAnswer(String strGuess) {
 	    HashMap<Character, Integer> hmMap = new HashMap<Character, Integer>();
+        LinearLayout llRowLayout = (LinearLayout) this.findViewById(R.id.row_layout);
+        LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        TextView tvNumber = new TextView(this);
+        TextView tvGuess = new TextView(this);
+        TextView tvCows = new TextView(this);
+        TextView tvBells = new TextView(this);
 
 	    int nCows = 0;      // numbers guessed right
 	    int nBells = 0;     // numbers in exact location
@@ -94,6 +103,20 @@ public class GameActivity extends Activity {
 			}
 		}
 		nGuess++;
+
+        tvNumber.setLayoutParams(lparams);
+        tvNumber.setText(String.valueOf(nGuess));
+        tvGuess.setLayoutParams(lparams);
+        tvGuess.setText(strGuess);
+        tvCows.setLayoutParams(lparams);
+        tvCows.setText(String.valueOf(nCows));
+        tvBells.setLayoutParams(lparams);
+        tvBells.setText(String.valueOf(nBells));
+        llRowLayout.addView(tvNumber);  // null pointer exception occurs here
+        llRowLayout.addView(tvGuess);
+        llRowLayout.addView(tvCows);
+        llRowLayout.addView(tvBells);
+
         Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells + " Guess: " + nGuess, Toast.LENGTH_SHORT).show();
         if (nBells == nGameCode) {
             youWin();

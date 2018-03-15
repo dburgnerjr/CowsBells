@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:id="@+id/relativeLayout1"
+    android:id="@+id/row_layout"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
  
     <TextView
-        android:id="@+id/FirstText"
+        android:id="@+id/txtNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/numGuess"
@@ -14,7 +14,7 @@
     </TextView>
      
     <TextView
-        android:id="@+id/SecondText"
+        android:id="@+id/txtGuess"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/guessSubmitted"
@@ -22,7 +22,7 @@
     </TextView>
      
     <TextView
-        android:id="@+id/ThirdText"
+        android:id="@+id/txtCows"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/cows"
@@ -30,7 +30,7 @@
     </TextView>
      
     <TextView
-        android:id="@+id/FourthText"
+        android:id="@+id/txtBells"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/bells"
