@@ -61,7 +61,7 @@ public class GameActivity extends Activity {
 
 	public void compareAnswer(String strGuess) {
 	    HashMap<Character, Integer> hmMap = new HashMap<Character, Integer>();
-        LinearLayout llRowLayout = (LinearLayout) this.findViewById(R.id.row_layout);
+        LinearLayout llRowLayout = (LinearLayout) this.findViewById(R.id.row_layout1);
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         TextView tvNumber = new TextView(this);
