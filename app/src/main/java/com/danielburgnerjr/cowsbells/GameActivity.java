@@ -11,6 +11,7 @@ import android.widget.Toast;
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.google.android.gms.ads.MobileAds;
 
 public class GameActivity extends Activity {
 	
@@ -22,6 +23,8 @@ public class GameActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_activity);
+
+		MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
 
 		Intent intI = getIntent();
 		nGameCode = Integer.parseInt(getIntent().getExtras().get("game_code").toString());

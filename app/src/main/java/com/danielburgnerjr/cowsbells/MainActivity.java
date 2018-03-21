@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
 
@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
 
 		final Button btnEasy = (Button) findViewById(R.id.btnEasy);
 		btnEasy.setOnClickListener(new OnClickListener() {
