@@ -59,6 +59,8 @@ public class GameActivity extends Activity {
 	public void newGame(View view) {
 		String strNewGame = "New Game";
         strAnswer = setAnswer(nGameCode);
+        etGuess.setText("");
+        nGuess = 0;
 		Toast.makeText(getApplicationContext(), strNewGame, Toast.LENGTH_SHORT).show();
 	}
 
