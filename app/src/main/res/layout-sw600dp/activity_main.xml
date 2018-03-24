@@ -15,7 +15,7 @@
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:text="@string/cowsBells" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         android:text="@string/easy"
         android:textColor="#fff" />
 
@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         android:text="@string/medium"
         android:textColor="#fff" />
     
@@ -50,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         android:text="@string/hard"
         android:textColor="#fff" />
 
@@ -62,7 +62,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         android:text="@string/superHard"
         android:textColor="#fff" />
 
@@ -74,7 +74,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         android:text="@string/howToPlay"
         android:textColor="#fff" />
 

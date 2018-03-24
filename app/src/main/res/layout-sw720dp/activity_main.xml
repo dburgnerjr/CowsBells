@@ -15,66 +15,66 @@
         android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:text="@string/cowsBells" />
 
     <Button
         android:id="@+id/btnEasy"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/textAppName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="75dp"
+        android:textSize="45sp"
         android:text="@string/easy"
         android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnMedium"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/btnEasy"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="75dp"
+        android:textSize="45sp"
         android:text="@string/medium"
         android:textColor="#fff" />
     
     <Button
         android:id="@+id/btnHard"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/btnMedium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="75dp"
+        android:textSize="45sp"
         android:text="@string/hard"
         android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnSuperHard"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/btnHard"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="75dp"
+        android:textSize="45sp"
         android:text="@string/superHard"
         android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnHowToPlay"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/btnSuperHard"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#000"
-        android:textSize="75dp"
+        android:textSize="45sp"
         android:text="@string/howToPlay"
         android:textColor="#fff" />
 
