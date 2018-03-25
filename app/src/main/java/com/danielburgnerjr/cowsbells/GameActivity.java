@@ -52,8 +52,12 @@ public class GameActivity extends Activity {
 	public void submit(View view) {
 		String strSubmit = "Submit";
 		String strGuess = etGuess.getText().toString();
-		Toast.makeText(getApplicationContext(), strSubmit + " " + strGuess, Toast.LENGTH_SHORT).show();
-		compareAnswer(strGuess);
+		if (strGuess.length() != nGameCode) {
+			Toast.makeText(getApplicationContext(), "Guess must be a " + nGameCode + " digit number", Toast.LENGTH_SHORT).show();
+		} else {
+			Toast.makeText(getApplicationContext(), strSubmit + " " + strGuess, Toast.LENGTH_SHORT).show();
+			compareAnswer(strGuess);
+		}
 	}
 
 	public void newGame(View view) {
