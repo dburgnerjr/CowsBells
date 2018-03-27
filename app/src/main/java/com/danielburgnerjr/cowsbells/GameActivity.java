@@ -73,10 +73,10 @@ public class GameActivity extends Activity {
         LinearLayout llRowLayout = (LinearLayout) this.findViewById(R.id.row_layout1);
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        TextView tvNumber = new TextView(this);
-        TextView tvGuess = new TextView(this);
-        TextView tvCows = new TextView(this);
-        TextView tvBells = new TextView(this);
+        TextView tvNumber = (TextView) this.findViewById(R.id.tv_guess_num1);
+        TextView tvGuess = (TextView) this.findViewById(R.id.tv_guess1);
+        TextView tvCows = (TextView) this.findViewById(R.id.tv_cows1);
+        TextView tvBells = (TextView) this.findViewById(R.id.tv_bells1);
 
 	    int nCows = 0;      // numbers guessed right
 	    int nBells = 0;     // numbers in exact location
