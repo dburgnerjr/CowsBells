@@ -97,35 +97,6 @@
 	    </TextView>
 	</LinearLayout>
 
-	<LinearLayout
-		android:id="@+id/row_layout1"
-		android:layout_height="fill_parent"
-		android:layout_width="fill_parent"
-        android:orientation="horizontal" >
-
-		<TextView
-			android:id="@+id/tv_guess_num1"
-			android:layout_height="fill_parent"
-			android:layout_width="fill_parent" />
-
-		<TextView
-			android:id="@+id/tv_guess1"
-			android:layout_height="fill_parent"
-			android:layout_width="fill_parent" />
-
-		<TextView
-			android:id="@+id/tv_cows1"
-			android:layout_height="fill_parent"
-			android:layout_width="fill_parent" />
-
-		<TextView
-			android:id="@+id/tv_bells1"
-			android:layout_height="fill_parent"
-			android:layout_width="fill_parent" />
-
-
-    </LinearLayout>
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
