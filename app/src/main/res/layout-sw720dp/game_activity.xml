@@ -58,50 +58,49 @@
             android:background="#000"
             android:textColor="#fff" />
     </LinearLayout>
-    
-	<LinearLayout
-	    android:id="@+id/row_layout"
-	    android:layout_height="fill_parent"
-	    android:layout_width="fill_parent" >
-	 
-	    <TextView
-	        android:id="@+id/FirstText"
-	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
-	        android:text="@string/numGuess"
-	        android:layout_weight="1">
-	    </TextView>
-	     
-	    <TextView
-	        android:id="@+id/SecondText"
-	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
-	        android:text="@string/guessSubmitted"
-	        android:layout_weight="1">
-	    </TextView>
-	     
-	    <TextView
-	        android:id="@+id/ThirdText"
-	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
-	        android:text="@string/cows"
-	        android:layout_weight="1">
-	    </TextView>
-	     
-	    <TextView
-	        android:id="@+id/FourthText"
-	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
-	        android:text="@string/bells"
-	        android:layout_weight="1">
-	    </TextView>
-	</LinearLayout>
 
 	<LinearLayout
-		android:id="@+id/row_layout1"
-		android:layout_height="fill_parent"
-		android:layout_width="fill_parent"
-        android:orientation="horizontal">
+		android:id="@+id/tableGuesses"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:id="@+id/row_layout"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent" >
+
+			<TextView
+				android:id="@+id/FirstText"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/numGuess"
+				android:layout_weight="1">
+			</TextView>
+
+			<TextView
+				android:id="@+id/SecondText"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/guessSubmitted"
+				android:layout_weight="1">
+			</TextView>
+
+			<TextView
+				android:id="@+id/ThirdText"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/cows"
+				android:layout_weight="1">
+			</TextView>
+
+			<TextView
+				android:id="@+id/FourthText"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/bells"
+				android:layout_weight="1">
+			</TextView>
+		</LinearLayout>
 
 	</LinearLayout>
 

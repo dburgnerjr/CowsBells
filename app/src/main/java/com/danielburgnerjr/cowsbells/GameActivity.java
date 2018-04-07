@@ -70,9 +70,10 @@ public class GameActivity extends Activity {
 
 	public void compareAnswer(String strGuess) {
 	    HashMap<Character, Integer> hmMap = new HashMap<Character, Integer>();
-        LinearLayout llRowLayout = (LinearLayout) this.findViewById(R.id.row_layout);
+        LinearLayout llTableGuesses = (LinearLayout) this.findViewById(R.id.tableGuesses);
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout llNewRowLayout = new LinearLayout(this);
         TextView tvNumber = new TextView(this);
         TextView tvGuess = new TextView(this);
         TextView tvCows = new TextView(this);
@@ -121,10 +122,11 @@ public class GameActivity extends Activity {
         tvCows.setText(String.valueOf(nCows));
         tvBells.setLayoutParams(lparams);
         tvBells.setText(String.valueOf(nBells));
-        llRowLayout.addView(tvNumber);  // null pointer exception occurs here
-        llRowLayout.addView(tvGuess);
-        llRowLayout.addView(tvCows);
-        llRowLayout.addView(tvBells);
+        llNewRowLayout.addView(tvNumber);
+        llNewRowLayout.addView(tvGuess);
+        llNewRowLayout.addView(tvCows);
+        llNewRowLayout.addView(tvBells);
+        llTableGuesses.addView(llNewRowLayout);
 
         Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells + " Guess: " + nGuess, Toast.LENGTH_SHORT).show();
         if (nBells == nGameCode) {
