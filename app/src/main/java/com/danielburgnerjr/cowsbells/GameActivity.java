@@ -73,7 +73,9 @@ public class GameActivity extends Activity {
         LinearLayout llTableGuesses = (LinearLayout) this.findViewById(R.id.tableGuesses);
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        lparams.weight = 1;
         LinearLayout llNewRowLayout = new LinearLayout(this);
+        llNewRowLayout.setOrientation(LinearLayout.HORIZONTAL);
         TextView tvNumber = new TextView(this);
         TextView tvGuess = new TextView(this);
         TextView tvCows = new TextView(this);
