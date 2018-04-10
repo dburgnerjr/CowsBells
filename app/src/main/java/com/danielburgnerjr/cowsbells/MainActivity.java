@@ -32,7 +32,6 @@ public class MainActivity extends Activity {
 			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
 			    intA.putExtra("game_code", nGameCode);
 			    startActivity(intA);
-				//Toast.makeText(getApplicationContext(), "Easy", Toast.LENGTH_SHORT).show();
 			}
 		});
 
@@ -44,7 +43,6 @@ public class MainActivity extends Activity {
 			    Intent intA = new Intent(MainActivity.this, GameActivity.class);
                 intA.putExtra("game_code", nGameCode);
                 startActivity(intA);
-				//Toast.makeText(getApplicationContext(), "Medium", Toast.LENGTH_SHORT).show();
 			}
 		});
 
@@ -56,7 +54,6 @@ public class MainActivity extends Activity {
                 Intent intA = new Intent(MainActivity.this, GameActivity.class);
                 intA.putExtra("game_code", nGameCode);
                 startActivity(intA);
-				//Toast.makeText(getApplicationContext(), "Hard", Toast.LENGTH_SHORT).show();
 			}
 		});
 
@@ -68,7 +65,6 @@ public class MainActivity extends Activity {
                 Intent intA = new Intent(MainActivity.this, GameActivity.class);
                 intA.putExtra("game_code", nGameCode);
                 startActivity(intA);
-				//Toast.makeText(getApplicationContext(), "Super Hard", Toast.LENGTH_SHORT).show();
 			}
 		});
 
@@ -77,7 +73,6 @@ public class MainActivity extends Activity {
 			public void onClick(View view) {
 				Intent intA = new Intent(MainActivity.this, HowToPlayActivity.class);
 				startActivity(intA);
-				//Toast.makeText(getApplicationContext(), "How To Play", Toast.LENGTH_SHORT).show();
 			}
 		});
 

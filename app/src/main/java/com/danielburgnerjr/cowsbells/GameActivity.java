@@ -1,8 +1,11 @@
 package com.danielburgnerjr.cowsbells;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -50,12 +53,10 @@ public class GameActivity extends Activity {
     }
 
 	public void submit(View view) {
-		String strSubmit = "Submit";
 		String strGuess = etGuess.getText().toString();
 		if (strGuess.length() != nGameCode) {
 			Toast.makeText(getApplicationContext(), "Guess must be a " + nGameCode + " digit number", Toast.LENGTH_SHORT).show();
 		} else {
-			Toast.makeText(getApplicationContext(), strSubmit + " " + strGuess, Toast.LENGTH_SHORT).show();
 			compareAnswer(strGuess);
 		}
 	}
@@ -130,13 +131,50 @@ public class GameActivity extends Activity {
         llNewRowLayout.addView(tvBells);
         llTableGuesses.addView(llNewRowLayout);
 
-        Toast.makeText(getApplicationContext(), "Cows: " + nCows + " Bells: " + nBells + " Guess: " + nGuess, Toast.LENGTH_SHORT).show();
         if (nBells == nGameCode) {
             youWin();
         }
     }
 
     public void youWin() {
-        Toast.makeText(getApplicationContext(), "You Win in " + nGuess + " tries!", Toast.LENGTH_SHORT).show();
+		AlertDialog alertDialog = new AlertDialog.Builder(GameActivity.this).create();
+		alertDialog.setTitle("Alert");
+		alertDialog.setMessage("You Win in " + nGuess + " tries!");
+		alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.dismiss();
+					}
+				});
+		alertDialog.show();
+        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
     }
+
+	public boolean onKeyDown(int nKeyCode, KeyEvent keEvent) {
+		if (nKeyCode == KeyEvent.KEYCODE_BACK) {
+			exitByBackKey();
+			return true;
+		}
+		return super.onKeyDown(nKeyCode, keEvent);
+	}
+
+	protected void exitByBackKey() {
+		AlertDialog adAlertBox = new AlertDialog.Builder(this)
+				.setMessage("Do you want to go back to main menu?")
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					// do something when the button is clicked
+					public void onClick(DialogInterface arg0, int arg1) {
+						Intent intB = new Intent(GameActivity.this, MainActivity.class);
+						startActivity(intB);
+						finish();
+						//close();
+					}
+				})
+				.setNegativeButton("No", new DialogInterface.OnClickListener() {
+					// do something when the button is clicked
+					public void onClick(DialogInterface arg0, int arg1) {
+					}
+				})
+				.show();
+	}
 }
