@@ -58,6 +58,7 @@ public class GameActivity extends Activity {
 			Toast.makeText(getApplicationContext(), "Guess must be a " + nGameCode + " digit number", Toast.LENGTH_SHORT).show();
 		} else {
 			compareAnswer(strGuess);
+			etGuess.setText("");
 		}
 	}
 
@@ -66,6 +67,8 @@ public class GameActivity extends Activity {
         strAnswer = setAnswer(nGameCode);
         etGuess.setText("");
         nGuess = 0;
+		LinearLayout ll = (LinearLayout) findViewById(R.id.tableGuesses);
+		ll.removeAllViews();
 		Toast.makeText(getApplicationContext(), strNewGame, Toast.LENGTH_SHORT).show();
 	}
 
@@ -138,12 +141,14 @@ public class GameActivity extends Activity {
 
     public void youWin() {
 		AlertDialog alertDialog = new AlertDialog.Builder(GameActivity.this).create();
-		alertDialog.setTitle("Alert");
+		alertDialog.setTitle("You Win!");
 		alertDialog.setMessage("You Win in " + nGuess + " tries!");
 		alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
-						dialog.dismiss();
+						Intent intB = new Intent(GameActivity.this, MainActivity.class);
+						startActivity(intB);
+						finish();
 					}
 				});
 		alertDialog.show();
