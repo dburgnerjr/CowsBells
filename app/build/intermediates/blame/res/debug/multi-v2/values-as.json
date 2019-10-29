@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/dburgnerjr/CowsBells/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml",
+            "map": [
+                {
+                    "source": "/Users/dburgnerjr/.gradle/caches/transforms-1/files-1.1/play-services-ads-18.2.0.aar/203a1fb2d574efaa38ed530eef88ce2d/res/values-as/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "197,265,379,448,522,611,732",
+                        "endColumns": "67,113,68,73,88,120,73",
+                        "endOffsets": "264,378,447,521,610,731,805"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "290,362,480,553,631,724,849",
+                        "endColumns": "71,117,72,77,92,124,77",
+                        "endOffsets": "357,475,548,626,719,844,922"
+                    }
+                },
+                {
+                    "source": "/Users/dburgnerjr/.gradle/caches/transforms-1/files-1.1/play-services-basement-17.0.0.aar/879d8cb90a53140e60c51ae13767b216/res/values-as/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "184",
+                        "endOffsets": "431"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "184",
+                        "endOffsets": "285"
+                    }
+                },
+                {
+                    "source": "/Users/dburgnerjr/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/46b98d66781dd0f310d0beaba13c013f/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "927",
+                        "endColumns": "100",
+                        "endOffsets": "1023"
+                    }
+                }
+            ]
+        }
+    ]
+}
