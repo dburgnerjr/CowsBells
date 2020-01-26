@@ -14,6 +14,9 @@ import android.widget.Toast;
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
+
 import com.google.android.gms.ads.MobileAds;
 
 public class GameActivity extends Activity {
@@ -27,29 +30,29 @@ public class GameActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_activity);
 
-		MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
+		//MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
 
 		Intent intI = getIntent();
-		nGameCode = Integer.parseInt(getIntent().getExtras().get("game_code").toString());
+		if (intI.getExtras() != null)
+			nGameCode = Integer.parseInt(Objects.requireNonNull(intI.getExtras().get("game_code")).toString());
 		strAnswer = setAnswer(nGameCode);
 
-		etGuess  = (EditText)findViewById(R.id.txtGuess);
+		etGuess = findViewById(R.id.txtGuess);
         nGuess = 0;
 	}
 
 	public String setAnswer(int nGC) {
-	    String strA = "";
+	    StringBuilder strA = new StringBuilder();
 
-	    ArrayList alNumbers = new ArrayList();
-	    for (int nI = 0; nI < 10; nI++) {
-	        alNumbers.add(nI);
-        }
+	    List<Integer> alNumbers = new ArrayList<>();
+	    for (int nI = 0; nI < 10; nI++)
+	    	alNumbers.add(nI);
 
         Collections.shuffle(alNumbers);
 	    for (int nJ = 0; nJ < nGC; nJ++) {
-	        strA += alNumbers.get(nJ);
+	        strA.append(alNumbers.get(nJ));
         }
-        return strA;
+        return strA.toString();
     }
 
 	public void submit(View view) {
@@ -67,14 +70,14 @@ public class GameActivity extends Activity {
         strAnswer = setAnswer(nGameCode);
         etGuess.setText("");
         nGuess = 0;
-		LinearLayout ll = (LinearLayout) findViewById(R.id.tableGuesses);
+		LinearLayout ll = findViewById(R.id.tableGuesses);
 		ll.removeAllViews();
 		Toast.makeText(getApplicationContext(), strNewGame, Toast.LENGTH_SHORT).show();
 	}
 
 	public void compareAnswer(String strGuess) {
-	    HashMap<Character, Integer> hmMap = new HashMap<Character, Integer>();
-        LinearLayout llTableGuesses = (LinearLayout) this.findViewById(R.id.tableGuesses);
+	    HashMap<Character, Integer> hmMap = new HashMap<>();
+        LinearLayout llTableGuesses = this.findViewById(R.id.tableGuesses);
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         lparams.weight = 1;
@@ -87,6 +90,7 @@ public class GameActivity extends Activity {
 
 	    int nCows = 0;      // numbers guessed right
 	    int nBells = 0;     // numbers in exact location
+		int nFreq;
 
 	    // bells check
 		for (int nI = 0; nI < nGameCode; nI++) {
@@ -94,7 +98,7 @@ public class GameActivity extends Activity {
 				nBells++;
 			} else {
 				if (hmMap.containsKey(strAnswer.charAt(nI))) {
-					int nFreq = hmMap.get(strAnswer.charAt(nI));
+					nFreq = hmMap.get(strAnswer.charAt(nI));
 					nFreq++;
 					hmMap.put(strAnswer.charAt(nI), nFreq);
 				} else {
@@ -111,7 +115,7 @@ public class GameActivity extends Activity {
 					if (hmMap.get(strGuess.charAt(nI)) == 1) {
 						hmMap.remove(strGuess.charAt(nI));
 					} else {
-						int nFreq = hmMap.get(strGuess.charAt(nI));
+						nFreq = hmMap.get(strGuess.charAt(nI));
 						nFreq--;
 						hmMap.put(strGuess.charAt(nI), nFreq);
 					}
@@ -172,7 +176,6 @@ public class GameActivity extends Activity {
 						Intent intB = new Intent(GameActivity.this, MainActivity.class);
 						startActivity(intB);
 						finish();
-						//close();
 					}
 				})
 				.setNegativeButton("No", new DialogInterface.OnClickListener() {

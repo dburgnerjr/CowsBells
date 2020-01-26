@@ -22,9 +22,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
+		//MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
 
-		final Button btnEasy = (Button) findViewById(R.id.btnEasy);
+		final Button btnEasy = findViewById(R.id.btnEasy);
 		btnEasy.setOnClickListener(new OnClickListener() {
             int nGameCode;
 			public void onClick(View view) {
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final Button btnMedium = (Button) findViewById(R.id.btnMedium);
+		final Button btnMedium = findViewById(R.id.btnMedium);
 		btnMedium.setOnClickListener(new OnClickListener() {
             int nGameCode;
 			public void onClick(View view) {
@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final Button btnHard = (Button) findViewById(R.id.btnHard);
+		final Button btnHard = findViewById(R.id.btnHard);
 		btnHard.setOnClickListener(new OnClickListener() {
             int nGameCode;
 			public void onClick(View view) {
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final Button btnSuperHard = (Button) findViewById(R.id.btnSuperHard);
+		final Button btnSuperHard = findViewById(R.id.btnSuperHard);
 		btnSuperHard.setOnClickListener(new OnClickListener() {
             int nGameCode;
             public void onClick(View view) {
@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final Button btnHowToPlay = (Button) findViewById(R.id.btnHowToPlay);
+		final Button btnHowToPlay = findViewById(R.id.btnHowToPlay);
 		btnHowToPlay.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 				Intent intA = new Intent(MainActivity.this, HowToPlayActivity.class);

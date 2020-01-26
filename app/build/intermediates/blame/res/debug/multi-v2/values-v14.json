@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dburgnerjr/CowsBells/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/Users/danielburgner/Documents/GitHub/CowsBells/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/dburgnerjr/CowsBells/app/src/main/res/values-v14/styles.xml",
+                    "source": "/Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/res/values-v14/styles.xml",
                     "from": {
                         "startLines": "6,29,19,15",
                         "startColumns": "4,4,4,4",
@@ -14,31 +14,12 @@
                         "endOffsets": "564,1233,1040,681"
                     },
                     "to": {
-                        "startLines": "2,10,18,40",
+                        "startLines": "2,10,13,21",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "55,438,874,2218",
-                        "endLines": "9,12,25,42",
+                        "startOffsets": "55,438,598,956",
+                        "endLines": "9,12,20,23",
                         "endColumns": "12,12,12,12",
-                        "endOffsets": "433,593,1227,2325"
-                    }
-                },
-                {
-                    "source": "/Users/dburgnerjr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/557dea8998bc7cc9b76fd9445ebcdb5d/res/values-v14/values-v14.xml",
-                    "from": {
-                        "startLines": "2,7,8,9,15",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,331,402,485,895",
-                        "endLines": "6,7,8,14,20",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "326,397,480,890,1312"
-                    },
-                    "to": {
-                        "startLines": "13,26,27,28,34",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "598,1232,1303,1386,1796",
-                        "endLines": "17,26,27,33,39",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "869,1298,1381,1791,2213"
+                        "endOffsets": "433,593,951,1063"
                     }
                 }
             ]
