@@ -24,5 +24,7 @@
     The Easy level is where you guess a four digit number.  Medium level is for a five digit number.  Hard level is for a six digit number.
     Super Hard is where you guess a seven digit number.  When a digit is among the digits in the number, it is scored as a "Cow."  When
     the digit is in the exact location, it is scored as a "Bell."</string>
-    <string name="banner_ad_unit_id">ca-app-pub-8379108590476103/4292186501</string>
+    <string name="banner_ad_unit_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id_prod">ca-app-pub-8379108590476103/4292186501</string>
+    <string name="admob_app_id">ca-app-pub-8379108590476103~5473406230</string>
 </resources>

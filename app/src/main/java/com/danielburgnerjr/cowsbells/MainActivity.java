@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
@@ -16,13 +19,17 @@ public class MainActivity extends Activity {
 	private final int N_MEDIUM = 5;
 	private final int N_HARD = 6;
 	private final int N_SUPER_HARD = 7;
+	AdView mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		//MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
+		MobileAds.initialize(this, String.valueOf(R.string.admob_app_id));
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 
 		final Button btnEasy = findViewById(R.id.btnEasy);
 		btnEasy.setOnClickListener(new OnClickListener() {

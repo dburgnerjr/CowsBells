@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/3ec6fa8458ddbe732478393a9f9e6c77/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/6119d746697059b7e1b74aab4d181f56/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/062eb74c1a6fe650432564db4113c6b5/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -45,15 +45,15 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danielburgner/.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/733fc1d306cee2c05d3e1fb0b7527020/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/fdd65d8b6066fd289a68b42931dc03a2/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-ads-base:18.3.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/31a15be1b9cbc0e14a06206e0cbad90d/play-services-ads-base-18.3.0/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-33:12
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:1-39:12
 		INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:2:11-69
@@ -70,7 +70,7 @@ ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:7:22-77
 application
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:9:5-31:19
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:9:5-37:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/3ec6fa8458ddbe732478393a9f9e6c77/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/3ec6fa8458ddbe732478393a9f9e6c77/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/f57077feaac73ce9e679b2c86ae76e87/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
@@ -94,45 +94,57 @@ MERGED from [com.google.android.gms:play-services-ads-base:18.3.0] /Users/daniel
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/danielburgner/.gradle/caches/transforms-2/files-2.1/e9dab9c67c1ee3668e0bbf86c6d8cbd8/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:13:9-41
+	android:fullBackupContent
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:11:9-41
 	android:icon
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:11:9-45
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:12:9-45
 	android:allowBackup
 		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:13:9-56
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:14:9-56
 activity#com.danielburgnerjr.cowsbells.MainActivity
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:15:9-23:20
 	android:label
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:17:13-45
 	android:name
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:15:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:17:13-21:29
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:19:25-66
+action#android.intent.action.VIEW
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:21:27-74
 activity#com.danielburgnerjr.cowsbells.GameActivity
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:23:9-26:60
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:24:9-28:20
 	android:label
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:25:13-37
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:26:13-48
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:27:13-48
 	android:name
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:24:13-41
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:25:13-41
 activity#com.danielburgnerjr.cowsbells.HowToPlayActivity
-ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:27:9-30:60
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:29:9-33:20
 	android:label
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:29:13-40
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:31:13-40
 	android:theme
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:30:13-48
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:32:13-48
 	android:name
-		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:28:13-46
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:30:13-46
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:34:9-36:51
+	android:value
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:36:13-49
+	android:name
+		ADDED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml:35:13-69
 uses-sdk
 INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/danielburgner/Documents/GitHub/CowsBells/app/src/main/AndroidManifest.xml

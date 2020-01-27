@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="26"
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -21,6 +21,7 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:fullBackupContent="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:testOnly="true"
@@ -30,6 +31,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -37,11 +39,17 @@
         <activity
             android:name="com.danielburgnerjr.cowsbells.GameActivity"
             android:label="New Game"
-            android:theme="@style/AppBaseTheme" />
+            android:theme="@style/AppBaseTheme" >
+        </activity>
         <activity
             android:name="com.danielburgnerjr.cowsbells.HowToPlayActivity"
             android:label="How To Play"
-            android:theme="@style/AppBaseTheme" />
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

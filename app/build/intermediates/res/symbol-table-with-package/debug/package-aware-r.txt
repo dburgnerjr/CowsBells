@@ -1012,8 +1012,10 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string admob_app_id
 string app_name
-string banner_ad_unit_id
+string banner_ad_unit_id_prod
+string banner_ad_unit_id_test
 string bells
 string common_google_play_services_unknown_issue
 string cows

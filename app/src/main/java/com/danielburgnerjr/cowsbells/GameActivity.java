@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -17,6 +16,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class GameActivity extends Activity {
@@ -25,12 +26,16 @@ public class GameActivity extends Activity {
 	private String strAnswer;
 	private int nGameCode;
 	private int nGuess;
-	
+	AdView mAdView;
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_activity);
 
-		//MobileAds.initialize(this, "ca-app-pub-8379108590476103~5473406230");
+		MobileAds.initialize(this, String.valueOf(R.string.admob_app_id));
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 
 		Intent intI = getIntent();
 		if (intI.getExtras() != null)
@@ -158,31 +163,4 @@ public class GameActivity extends Activity {
 		alertDialog.show();
         Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
     }
-
-	public boolean onKeyDown(int nKeyCode, KeyEvent keEvent) {
-		if (nKeyCode == KeyEvent.KEYCODE_BACK) {
-			exitByBackKey();
-			return true;
-		}
-		return super.onKeyDown(nKeyCode, keEvent);
-	}
-
-	protected void exitByBackKey() {
-		AlertDialog adAlertBox = new AlertDialog.Builder(this)
-				.setMessage("Do you want to go back to main menu?")
-				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-					// do something when the button is clicked
-					public void onClick(DialogInterface arg0, int arg1) {
-						Intent intB = new Intent(GameActivity.this, MainActivity.class);
-						startActivity(intB);
-						finish();
-					}
-				})
-				.setNegativeButton("No", new DialogInterface.OnClickListener() {
-					// do something when the button is clicked
-					public void onClick(DialogInterface arg0, int arg1) {
-					}
-				})
-				.show();
-	}
 }
