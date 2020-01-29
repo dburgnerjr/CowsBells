@@ -103,7 +103,7 @@ public class GameActivity extends Activity {
 				nBells++;
 			} else {
 				if (hmMap.containsKey(strAnswer.charAt(nI))) {
-					nFreq = hmMap.get(strAnswer.charAt(nI));
+					nFreq = Objects.requireNonNull(hmMap.get(strAnswer.charAt(nI)));
 					nFreq++;
 					hmMap.put(strAnswer.charAt(nI), nFreq);
 				} else {
@@ -117,10 +117,10 @@ public class GameActivity extends Activity {
 			if (strGuess.charAt(nI) != strAnswer.charAt(nI)) {
 				if (hmMap.containsKey(strGuess.charAt(nI))) {
 					nCows++;
-					if (hmMap.get(strGuess.charAt(nI)) == 1) {
+					if (Objects.requireNonNull(hmMap.get(strGuess.charAt(nI))) == 1) {
 						hmMap.remove(strGuess.charAt(nI));
 					} else {
-						nFreq = hmMap.get(strGuess.charAt(nI));
+						nFreq = Objects.requireNonNull(hmMap.get(strGuess.charAt(nI)));
 						nFreq--;
 						hmMap.put(strGuess.charAt(nI), nFreq);
 					}
