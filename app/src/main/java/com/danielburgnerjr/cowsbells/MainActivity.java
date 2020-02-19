@@ -76,11 +76,9 @@ public class MainActivity extends Activity {
 		});
 
 		final Button btnHowToPlay = findViewById(R.id.btnHowToPlay);
-		btnHowToPlay.setOnClickListener(new OnClickListener() {
-			public void onClick(View view) {
-				Intent intA = new Intent(MainActivity.this, HowToPlayActivity.class);
-				startActivity(intA);
-			}
+		btnHowToPlay.setOnClickListener(view -> {
+			Intent intA = new Intent(MainActivity.this, HowToPlayActivity.class);
+			startActivity(intA);
 		});
 
 	}

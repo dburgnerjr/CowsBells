@@ -2,7 +2,6 @@ package com.danielburgnerjr.cowsbells;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -153,12 +152,10 @@ public class GameActivity extends Activity {
 		alertDialog.setTitle("You Win!");
 		alertDialog.setMessage("You Win in " + nGuess + " tries!");
 		alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						Intent intB = new Intent(GameActivity.this, MainActivity.class);
-						startActivity(intB);
-						finish();
-					}
+				(dialog, which) -> {
+					Intent intB = new Intent(GameActivity.this, MainActivity.class);
+					startActivity(intB);
+					finish();
 				});
 		alertDialog.show();
         Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
