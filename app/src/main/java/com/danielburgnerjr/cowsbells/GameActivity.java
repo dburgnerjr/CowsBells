@@ -31,7 +31,7 @@ public class GameActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_activity);
 
-		MobileAds.initialize(this, String.valueOf(R.string.admob_app_id));
+		MobileAds.initialize(this);
 		mAdView = findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		mAdView.loadAd(adRequest);
@@ -49,11 +49,12 @@ public class GameActivity extends Activity {
 	    StringBuilder strA = new StringBuilder();
 
 	    List<Integer> alNumbers = new ArrayList<>();
-	    for (int nI = 0; nI < 10; nI++)
-	    	alNumbers.add(nI);
+	    for (int nI = 0; nI < 10; nI++) {
+            alNumbers.add(nI);
+        }
 
         Collections.shuffle(alNumbers);
-	    for (int nJ = 0; nJ < nGC; nJ++) {
+        for (int nJ = 0; nJ < nGC; nJ++) {
 	        strA.append(alNumbers.get(nJ));
         }
         return strA.toString();
